@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Verdana';
+}
+
+header{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header p{
+    width: 60%;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+
+.banner{
+    height:62vh;
+    width: 100vw;
+    background-image: url('assets/img/capa.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+
+.sub{
+  
+    height: 30%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sub-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 12px;
+    width: 60%;
+    height: 100%;
+}
+
+.sobre{
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 400px;
+    text-align: left;
+    margin: 0 auto;
+    
+}
+
+.container-imagem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+h2, .sobre p{
+    align-self: flex-start;
+    padding: 0 5px;
+    margin: 20px 0;
+}
+
+.sobre h2{
+    font-size: 20px;
+}
+.container-para{
+    margin-top: 20px;
+    align-self: flex-start;
+    width: 100%;
+    height: 60px;
+   
+ 
+}
+
+.sobre img{
+ 
+    width: 33%;
+}
+
+.container-para p{
+    margin:8px 0;
+    border-left: 1px solid;
+    line-height: 20px;
+}
+
+.divisor{
+
+    margin-top: 150px;
+    height: 100px;
+    width: 100%;
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.divisor h2{
+    align-self: center;
+}
+
+.divisor h2{
+    width: 100%;
+    text-align: center;
+    background-color:rgb(112, 7, 7) ;
+    color: #fff;
+}
+
+form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+fieldset{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 9px 9px;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+}
+
+input, label, form h2{
+    margin-bottom: 15px;
+}
+
+input{
+    padding: 10px;
+    outline: none;
+}
+
+form h2{
+    margin-top: 20px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: red;
+    cursor: pointer;
+}
+
+
+form h2{
+    font-size: 20px;
+}
+
+form p{
+    align-self: flex-start;
+}
+
+footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+}
+
+select{
+    height: 35px;
+}
+
+/*MOBILE MOBILE MOBILE MOBILE*/
+
+@media screen and (max-width:425px){
+    .container-imagem{
+        flex-wrap: wrap;
+    }
+
+    img{
+        width: 50%;
+    }
+
+    .sub-2, .sobre, form{
+        width: 100%;
+    }
+
+    .divisor{
+        margin-top: 30px;
+    }
+
+    .banner{
+        height: 40vh;
+    }
+
+}
+
+/*MOBILE MOBILE MOBILE MOBILE*/
+
+@media screen and (min-width:426px) and (max-width:768px){
+
+    .container-imagem{
+        flex-wrap: wrap;
+    }
+
+    img{
+        width: 50%;
+    }
+
+    .sub-2, .sobre, form{
+        width: 100%;
+    }
+
+    .divisor{
+        margin-top: 30px;
+    }
+
+    .banner{
+        height: 40vh;
+    }
+
+
+}
